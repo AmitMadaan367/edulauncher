@@ -1,0 +1,66 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <title>CRM</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="/static/css/style.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+  <body>
+    <body class="back-image">
+
+      <section class="register_from">
+          <!--  <div class="logo">
+  </div>    -->
+        <div class="personal-info-form-2">
+        
+        <!-- <div class="login-page"> -->
+      <!--     <div class="logo_side">
+            
+        </div> -->
+                <div class="form">
+                  <form class="login-form" method="post" >
+                    <img src="/static/images/logo_main.png">
+                      {% csrf_token %}
+                    <div class="login-detail">
+                      <center><p>Login </p></center>
+                      <h5 style="color:red"> {{pass}}</h5>
+                      <br>
+                    <input type="text" placeholder="Enter Email or Username" name="js" required>
+
+                    <input type="password" placeholder="Enter Password" name="aak" id="myInput" required>
+                    <input type="checkbox" class="psw-show" onclick="myFunction()">Show Password<br><br>
+
+                   <div class="btn__sec">
+                    <button class="btn1" type="submit" class="registerbtn">Login</button>
+                   
+                        </div><br>
+                        <div class="forget-box">
+                  <p><a href="/forgot/">Forgot Password</a></p>
+                   <p>Not Registered <a href="/signup/">Create an Account</a></p>
+               </div>
+                    </div>
+                  </form>
+                </div>
+              <!-- </div> -->
+
+
+    </div>
+  </section>
+
+    </body>
+    <script type="text/javascript">
+      function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+    </script>
+  </html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+      <title>CRM</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="/static/css/style.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+  <body>
+    <body class="back-image">
+
+<section class="register_from regis">
+
+<div class="personal-info-form-2">
+
+
+    <div class="form">
+ <form class="signup-form" method="POST" enctype="multipart/form-data">{% csrf_token %}
+        <img src="/static/images/logo_main.png">
+        <div class="login-detail">
+          <h1>{{al}}</h1>
+          <center><p>Register</p></center>
+
+          <div class="form-grid">
+        <input type="file" id="myfile" name="myfile" >
+
+        <input type="email" placeholder="Enter Email" name="js" required>
+
+        <input type="password" id="psw" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+      
+        <input type="text" name="fname" placeholder="Enter First Name"  />
+          <input type="text" name="lname" placeholder="Enter Last Name" />
+          <input type="text" name="zname" placeholder= "Enter Phone Number" required/>
+        
+        
+        </div>
+        <div class="btn__sec">
+        <button class="btn1 registerbtn" type="submit">Register</button>
+        <p class="message"><a href="/">Please login</a></p>
+      </div>
+    </div>
+      </form>
+    </div>
+
+
+    </div>
+  </section>
+
+    </body>
+  </html>
